@@ -5,3 +5,22 @@
 .vh-10 {
   height: 10vh;
 }
+
+.vh-80 {
+  height: 80vh;
+}
+
+/* modifying existing class */
+
+.carousel-caption {
+  height: 40vh;
+  width: 50em;
+  position: absolute;
+  left: calc(50% - 25em);
+  top: calc(50% - 20vh);
+}
+
+.bg {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: soft-light;
+}

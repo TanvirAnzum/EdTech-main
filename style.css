@@ -3,20 +3,24 @@
 }
 
 .vh-10 {
-  height: 10vh;
+  min-height: 10vh;
 }
 
 .vh-80 {
-  height: 80vh;
+  min-height: 80vh;
 }
 
 .vh-30 {
-  height: 30vh;
+  min-height: 30vh;
 }
 
 .nopadding {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+.vh-25 {
+  min-height: 25vh;
 }
 
 /* modifying existing class */
@@ -36,4 +40,5 @@
 
 .btn-lg {
   width: 12em;
+  height: 2.8em;
 }

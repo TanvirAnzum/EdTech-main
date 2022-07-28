@@ -39,7 +39,7 @@
   <body>
     <header class="header-area mb-2 mt-2">
       <nav class="navbar navbar-expand-lg vh-10 w-90 mx-auto">
-        <div class="container-fluid d-flex justify-content-between">
+        <div class="container-fluid d-flex justify-content-between p-0">
           <a class="navbar-brand fs-1" href="./index.html">NextGen</a>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -64,7 +64,9 @@
               </li>
             </ul>
           </div>
-          <button class="btn btn-outline-primary d-none d-md-block fs-5">
+          <button
+            class="btn btn-outline-primary d-none d-md-block fs-5 ms-md-auto me-md-3"
+          >
             Register
           </button>
           <button
@@ -97,13 +99,15 @@
               class="d-block cover-img rounded"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div
+              class="carousel-caption d-flex flex-column align-items-center justify-content-around"
+            >
               <h1 class="display-1">Get Started Digital Learning</h1>
-              <p class="fs-5">
+              <p class="fs-res">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
               </p>
-              <button class="btn btn-primary">Get Started</button>
+              <button class="btn btn-primary fs-5">Get Started</button>
             </div>
           </div>
           <div class="carousel-item">
@@ -112,13 +116,15 @@
               class="d-block cover-img rounded"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div
+              class="carousel-caption d-flex flex-column align-items-center justify-content-around"
+            >
               <h1 class="display-1">Get Started Digital Learning</h1>
-              <p class="fs-5">
+              <p class="fs-res">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
               </p>
-              <button class="btn btn-primary">Get Started</button>
+              <button class="btn btn-primary fs-5">Get Started</button>
             </div>
           </div>
           <div class="carousel-item">
@@ -127,13 +133,15 @@
               class="d-block cover-img rounded"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div
+              class="carousel-caption d-flex flex-column align-items-center justify-content-around"
+            >
               <h1 class="display-1">Get Started Digital Learning</h1>
-              <p class="fs-5">
+              <p class="fs-res">
                 It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
               </p>
-              <button class="btn btn-primary">Get Started</button>
+              <button class="btn btn-primary fs-5">Get Started</button>
             </div>
           </div>
         </div>
@@ -160,13 +168,17 @@
     <!-- course header -->
     <div class="course-section-title">
       <div
-        class="container w-50 mx-auto vh-30 d-flex flex-column align-items-center justify-content-center"
+        class="container mx-auto vh-30 d-flex flex-column align-items-center justify-content-center"
       >
-        <h1 class="h1 text-center">Discover Our Popular Courses</h1>
-        <p class="fs-5 text-center">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout.
-        </p>
+        <div class="row">
+          <div class="col-12 col-md-10 col-lg-8 mx-auto">
+            <h1 class="h1 text-center">Discover Our Popular Courses</h1>
+            <p class="fs-5 text-center">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -321,7 +333,7 @@
             class="text-section w-75 justify-content-center text-center text-lg-start mt-2"
           >
             <h1 class="h2 text-white ms-lg-5 mb-lg-4">Ready to join?</h1>
-            <p class="fs-5 text-light ms-lg-5">
+            <p class="fs-res text-light ms-lg-5 me-lg-5">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout.
             </p>
@@ -346,7 +358,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">
-                    Modal title
+                    Registration Now!
                   </h5>
                   <button
                     type="button"
@@ -355,17 +367,33 @@
                     aria-label="Close"
                   ></button>
                 </div>
-                <div class="modal-body">...</div>
+                <div class="modal-body">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Username"
+                      aria-label="Username"
+                    />
+                    <span class="input-group-text">@</span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Domain(example.com)"
+                      aria-label="Server"
+                    />
+                  </div>
+                </div>
                 <div class="modal-footer">
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    class="btn btn-danger"
                     data-bs-dismiss="modal"
                   >
                     Close
                   </button>
-                  <button type="button" class="btn btn-primary">
-                    Save changes
+                  <button type="button" class="btn btn-success">
+                    Subscribe
                   </button>
                 </div>
               </div>
@@ -382,7 +410,7 @@
         class="container w-90 mx-auto vh-25 text-center d-flex flex-column align-items-center justify-content-center gap-2"
       >
         <h1 class="h1">Frequently Asked Questions</h1>
-        <p class="fs-5 w-75">
+        <p class="fs-res mx-auto text-center">
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout.
         </p>
@@ -400,7 +428,7 @@
                   aria-expanded="true"
                   aria-controls="panelsStayOpen-collapseOne"
                 >
-                  Accordion Item #1
+                  What are the differences between flex box & CSS grid? 
                 </button>
               </h2>
               <div
@@ -409,15 +437,15 @@
                 aria-labelledby="panelsStayOpen-headingOne"
               >
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It
-                  is shown by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  The most important thing to know is that
+                  <strong>flexbox is one-dimensional</strong>, while
+                  <strong>CSS Grid is two-dimensional</strong>. Flexbox lays out
+                  items along either the horizontal or the vertical axis, so you
+                  have to decide whether you want a row-based or a column-based
+                  layout.<strong
+                    >CSS Grid focuses on precise content placement. Flexbox
+                    focuses on content flow rather than content placement.
+                  </strong>
                 </div>
               </div>
             </div>
@@ -431,7 +459,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseTwo"
                 >
-                  Accordion Item #2
+                  What are the differences between Bootstrap & Tailwind?
                 </button>
               </h2>
               <div
@@ -440,15 +468,23 @@
                 aria-labelledby="panelsStayOpen-headingTwo"
               >
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  Tailwind offers
+                  <strong
+                    >predesigned widgets to build a site from scratch with fast
+                    UI development.</strong
+                  >
+                  Bootstrap comes with
+                  <strong
+                    >a set of pre-styled responsive, mobile-first components
+                    that possess a definite UI kit.</strong
+                  >
+                  Tailwind CSS uses
+                  <strong>a set of utility classes to create a neat UI</strong>
+                  with more flexibility and uniqueness. Sites created using
+                  Bootstrap follow
+                  <strong
+                    >the generic pattern that makes them look identical.</strong
+                  >
                 </div>
               </div>
             </div>
@@ -462,7 +498,7 @@
                   aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseThree"
                 >
-                  Accordion Item #3
+                  What is CSS box model?
                 </button>
               </h2>
               <div
@@ -471,46 +507,57 @@
                 aria-labelledby="panelsStayOpen-headingThree"
               >
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  A CSS box model is a compartment that includes numerous
+                  assets, such as edge, border, padding and material. It is used
+                  to develop the design and structure of a web page. It can be
+                  used as a set of tools to personalize the layout of different
+                  components. According to the CSS box model, the web browser
+                  supplies each element as a square prism. The CSS box model
+                  contains the different properties in CSS. These are listed
+                  below:
+                  <ul class="p-3">
+                    <li>Border</li>
+                    <li>Margin</li>
+                    <li>Padding</li>
+                    <li>Content</li>
+                  </ul>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseThree"
+                  data-bs-target="#panelsStayOpen-collapseFour"
                   aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseThree"
+                  aria-controls="panelsStayOpen-collapseFour"
                 >
-                  Accordion Item #3
+                  What are semantic tags?
                 </button>
               </h2>
               <div
-                id="panelsStayOpen-collapseThree"
+                id="panelsStayOpen-collapseFour"
                 class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingThree"
+                aria-labelledby="panelsStayOpen-headingFour"
               >
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  Semantic HTML tags allow you to
+                  <strong
+                    >add meaning to your markup so that search engines, screen
+                    readers, and web browsers can make sense of it.</strong
+                  >
+                  By default, when a user agent reads your content it doesn’t
+                  understand the context and meaning. Semantic HTML tags let you
+                  serve structured content to your users, which is especially
+                  important for
+                  <strong> on-page SEO and accessibility.</strong> Although
+                  semantic tags existed in earlier HTML versions, the HTML5
+                  specifications added several new semantic elements to the
+                  syntax—both on the block and inline levels. In this article,
+                  we’ll look into how HTML semantics work and also give you some
+                  tips about how to get the most out of the feature.
                 </div>
               </div>
             </div>
